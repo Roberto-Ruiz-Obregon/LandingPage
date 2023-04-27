@@ -33,17 +33,16 @@
   <body>
     <header class="header nav-open"> <!--nav-opren js-->
       <!--cuando le demos click, se va al inicio de la pagina-->
-      <a href="#">
-        <img class="logo" alt="Logo de la fundación" src="img/logos/logoFundacion.png" />
+      <a href="#" class="logo">
+        <img height="75px"  alt="Logo de la fundación" src="img/logos/logoFundacion.png" />
+        <span class="nombreFundacion">Fundación Roberto Ruíz Obregón</span>
       </a>
       
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="nombreFundacion">Fundación Roberto Ruíz Obregón</a></li>
           <li><a class="main-nav-link" href="#nosotros">Quienes somos</a></li>
           <li><a class="main-nav-link" href="#misionVision">Misión</a></li>
           <li><a class="main-nav-link" href="#misionVision">Visión</a></li>
-          <li><a class="main-nav-link nav-ca" href="#app">Nuestra app</a></li>
         </ul>
       </nav>
 
@@ -54,6 +53,7 @@
     </header>
 
     <main>
+      
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
@@ -64,24 +64,22 @@
               Motivados por la sociedad mexicana, se ha creado una aplicación Android, donde
               podrás encontrar cursos, programas, eventos, becas y más...
             </p>
-            <!--href = #cta porqque tenemos un id con ese nombre enn section-cta-->
-            <a href="#descargar" class="btn btn--full margin-right-small">
-              Descargala ahora
-            </a>
-            <a href="#app" class="btn btn--outline"> Conocela &darr;</a>
+            <div class="hero-c2a">
+              <!--href = #cta porqque tenemos un id con ese nombre enn section-cta-->
+              <a class="margin-right-small" href="https://play.google.com/store/games?hl=es_MX&gl=US">
+                <img
+                  class="download-btn"
+                  alt="Botón para descargar applicación en Google Play Store"
+                  src="img/app/google-play-badge.png"
+                  height="80px"
+                />
+              </a>
+              <a href="#app" class="btn btn--outline"> Conocela &darr;</a>
+            </div>
 
-            <div class="delivered-meals">
-              <div class="delivered-faces"></div>
-              <div class="delivered-img">
-                <img src="img/customers/customer-1.jpg" alt="coustemer photo" />
-                <img src="img/customers/customer-2.jpg" alt="coustemer photo" />
-                <img src="img/customers/customer-3.jpg" alt="coustemer photo" />
-                <img src="img/customers/customer-4.jpg" alt="coustemer photo" />
-                <img src="img/customers/customer-5.jpg" alt="coustemer photo" />
-                <img src="img/customers/customer-6.jpg" alt="coustemer photo" />
-              </div>
-              <p class="delivered-text">
-                <spam>Unete </spam>a nuestra comunidad
+            <div class="hero-footer">
+              <p class="hero-footer-text">
+                <a href="https://www.facebook.com/fundacionruizobregon">Unete</a> a nuestra comunidad
               </p>
             </div>
           </div>
@@ -89,97 +87,33 @@
             <img
               src="img/gallery/gallery-1.jpg"
               class="hero-img"
-              alt="Mujer usando un telefono android"
+              alt="Conferencia con gente escuchando un ponente"
             />
           </div>
         </div>
       </section>
-      <section class="section-testimonials grid grid-2-cols" id="nosotros">
+      
+      <section class="section-about grid grid-2-cols" id="nosotros">
 
-        <div class="testimonials-container">
+        <div class="about-container">
           <span class="subheading">Quienes somos</span>
           <h2 class="heading-secondary">
            ¿Quién es Roberto Ruíz Obregón?
           </h2>
-        <div class="testimonials">
-          <figure class="testimonial">
-            <img class="testimonial-img" src="img/customers/dave.jpg" />
-            <blockquote class="testimonial-text"> Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</blockquote>
-            <p class="testimonial-name"> &mdash; Dave Bryson</p>
-          </figure>
-
-
-          <figure class="testimonial">
-            <img class="testimonial-img" src="img/customers/steve.jpg" />
-            <blockquote class="testimonial-text"> Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now!</blockquote>
-            <p class="testimonial-name"> &mdash;  Steve Miller</p>
-          </figure>
-
-          <figure class="testimonial">
-            <img class="testimonial-img" src="img/customers/ben.jpg" />
-            <blockquote class="testimonial-text"> The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore! </blockquote>
-            <p class="testimonial-name"> &mdash; Ben Hadley</p>
-          </figure>
-
-          <figure class="testimonial">
-            <img class="testimonial-img" src="img/customers/hannah.jpg" />
-            <blockquote class="testimonial-text"> I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic.</blockquote>
-            <p class="testimonial-name"> &mdash;  Hannah Smith</p>
-          </figure>
+        <div>
+          <p>
+            Roberto Ruiz Obregón fue un importante empresario queretano, considerado como el más importante de las últimas décadas, debido a su contribución en el desarrollo económico del estado de Querétaro. Fundó la embotelladora La Victoria, adquirió la franquicia de Coca Cola, impulsó la formación del Club de Industriales de Querétaro y promovió la construcción del campus del Tecnológico de Monterrey y los planteles del Conalep en la ciudad de Querétaro y Amealco. Nació en Amealco en 1904 y falleció en el año 2001.
+          </p>
         </div>
       </div>
-        <div class="gallery">
+      <div class="gallery">
           <figure class="gallery-item">
-            <img src="img/gallery/gallery-13.jpg" alt="Photo of beautifully arranged food" />
-            
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/gallery/gallery-2.jpg" alt="Photo of beautifully arranged food" />
-            
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/gallery/gallery-3.jpg" alt="Photo of beautifully arranged food" />
-            
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/gallery/gallery-4.jpg" alt="Photo of beautifully arranged food" />
-            
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/gallery/gallery-5.jpg" alt="Photo of beautifully arranged food" />
-            
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/gallery/gallery-6.jpg" alt="Photo of beautifully arranged food" />
-            
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/gallery/gallery-7.jpg" alt="Photo of beautifully arranged food" />
-            
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/gallery/gallery-8.jpg" alt="Photo of beautifully arranged food" />
-            
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/gallery/gallery-9.jpg" alt="Photo of beautifully arranged food" />
-            
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/gallery/gallery-10.jpg" alt="Photo of beautifully arranged food" />
-            
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/gallery/gallery-11.jpg" alt="Photo of beautifully arranged food" />
-            
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/gallery/gallery-12.jpg" alt="Photo of beautifully arranged food" />
-            
+            <img src="img/gallery/gallery-13.jpg" alt="Photo of Mr. Roberto Ruiz Obregon" />
           </figure>
         </div>
       </section>
-      <section class="section-meals" id="misionVision">
+
+      <section class="section-mission" id="misionVision">
         <div class="container center-text">
           <span class="subheading">Misión y Visión</span>
           <h2 class="heading-secondary">
@@ -187,20 +121,20 @@
           </h2>
         </div>
 
-        <div class="container grid grid-2-cols margin-bottom-md">
-          <div class="meal">
+        <div class="container grid grid-2-cols grid--2-col margin-bottom-md">
+          <div class="mission">
             <img
-              src="img/meals/mision.jpg"
-              class="meal-img"
-              alt="Japanesse Gyozas"
+              src="img/gallery/gallery-2.jpg"
+              class="mission-img"
+              alt="Mision Roberto Ruiz Obregon"
             />
-            <div class="meal-content">
-            <div class="meal-tags">
+            <div class="mission-content">
+            <div class="mission-tags">
               <span class="tag tag--vegetarian">Misión</span>
             </div>
-            <p class="meal-title">Nuestra razón de ser</p>
+            <p class="mission-title">Nuestra razón de ser</p>
             
-            <p class="meal-attribute">
+            <p class="mission-attribute">
               Promover y organizar programas relacionados con la educación,
                responsabilidad social empresarial, la profesionalización del 
                tercer sector, el bienestar social, la sustentabilidad y la cultura, 
@@ -209,26 +143,24 @@
           </div>
           </div>
 
-          <div class="meal">
+          <div class="mission">
             <img
-              src="img/meals/vision.jpg"
-              class="meal-img2"
-              alt="Avocado Salad"
+              src="img/gallery/gallery-3.jpg"
+              class="mission-img2"
+              alt="Vision Roberto Ruiz Obregon"
             />
-            <div class="meal-content">
-            <div class="meal-tags">
+            <div class="mission-content">
+            <div class="mission-tags">
               <span class="tag tag--paleo">Visión</span>
             </div>
-            <p class="meal-title">Nuestras metas</p>
+            <p class="mission-title">Nuestras metas</p>
             
-            <ul class="meal-attributes">
-              <li class="meal-attribute">
-                <ion-icon class="meal-icon"name="flame-outline"></ion-icon ><span></span>Calories:
-                <strong>400</strong></span>
-              </li>
-              <li class="meal-attribute"><ion-icon class="meal-icon" name="restaurant-outline"></ion-icon><span>NutriScore &reg; <trong>92</trong></span></li>
-              <li class="meal-attribute"><ion-icon class="meal-icon"name="star-outline"></ion-icon><span><strong>4.9</strong> rating (537)</span></li>
-            </ul>
+            <p class="mission-attribute">
+              Promover y organizar programas relacionados con la educación,
+               responsabilidad social empresarial, la profesionalización del 
+               tercer sector, el bienestar social, la sustentabilidad y la cultura, 
+               a favor del desarollo de la comunidad queretana.
+            </p>
           </div>
         </div>
       </section>
@@ -327,11 +259,11 @@
           </h2>
         </div>
 
-        <div class="container grid grid-1-cols margin-bottom-md">
+        <div class="container princing-plan-container margin-bottom-md">
           <div class="princing-plan starter">
             <header class="plan-header">
-              <p class="plan-name">Obtenla por</p>
-              <p class="plan-price"><span>$</span>0</p>
+              <p class="plan-name">Obtenla</p>
+              <h1 class="plan-price">GRATIS</h1>
               <p class="plan-text">tu experiencia no tiene costo</p>
             </header>
             <ul class="list">
@@ -358,7 +290,14 @@
               
             </ul>
             <div class="plan-sing-up">
-              <a href="#" class="btn btn--full">Descargar ahora</a>
+              <a class="margin-right-small" href="https://play.google.com/store/games?hl=es_MX&gl=US">
+                <img
+                  class="download-btn"
+                  alt="Botón para descargar applicación en Google Play Store"
+                  src="img/app/google-play-badge.png"
+                  height="80px"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -409,24 +348,28 @@
       <div class="container  grid grid-footer">
         <div class="logo-col">
           <a href="#" class="footer-logo">
-            <img class="logo" alt="Omnifood logo" src=img/logos/logoFundacion.png />
+            <img class="logo" alt="Omnifood logo" src=img/logos/logoFundacion.png height="150px" />
           </a>
 
           <ul class="social-links">
-            <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
-            <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
-            <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
+            <!-- <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li> -->
+            <li>
+              <a class="footer-link" href="https://www.facebook.com/fundacionruizobregon">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <!-- <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li> -->
           </ul>
 
-          <p class="copyright">Copyrigt &copy; <span class="year">2017</span> by Omifood Inc. All rights reserved</p>
+          <p class="copyright">Derechos de autor &copy; <span class="year">2023</span> por la fundación Roberto Ruíz Obregón.</p>
           
         </div>
         <div class="adress-col">
-          <p class="footer-heading">Contact Us</p>
+          <p class="footer-heading">Contáctanos</p>
           <adress class="contacts">
-            <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
-            <p><a class="footer-link" href="tel:415-201-6370">415-201-6370</a></p>
-            <p><a class="footer-link" href="mailto:hello@omnifood.com">hello@omnifood.com</a></p>
+            <p>Prol. Corregidora Nte. N° 285-A, Querétaro, Mexico, 76000</p>
+            <!-- <p><a class="footer-link" href="tel:415-201-6370">415-201-6370</a></p> -->
+            <p><a class="footer-link" href="mailto:mpavon@fooque.com.mx">mpavon@fooque.com.mx</a></p>
           </adress>
         </div>
       </div>

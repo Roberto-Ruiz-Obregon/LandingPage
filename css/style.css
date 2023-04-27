@@ -22,11 +22,11 @@ Paragraph default: 1.6
 
 --- 02 COLORS
 
-- Primary: #e67e22
+- Primary: #cc2a24
 
 - Tints
 #fdf2e9
-#cf711f
+#6f1815
 #fae5d3
 
 - Shades:
@@ -62,13 +62,18 @@ html {
 
 body {
   font-family: "rubik", sans-serif;
-  line-height: 1;
+  font-size: 2rem;
+  line-height: 1.6;
   font-weight: 400;
   color: #555;
 
   /* Only works if there is nothing absolutley
   positioned in relation to body */
   overflow: hidden-x;
+}
+
+a {
+  color: #6f1815;
 }
 
 /*************************/
@@ -79,6 +84,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.6rem;
 }
 
@@ -93,7 +99,7 @@ body {
 .icon-list {
   width: 3rem;
   height: 3rem;
-  color: #e67e22;
+  color: #cc2a24;
 }
 
 .container {
@@ -163,7 +169,7 @@ body {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #cf711f;
+  color: #cc2a24;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
@@ -190,13 +196,13 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e67e22;
+  background-color: #cc2a24;
   color: #fff;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #cf711f;
+  background-color: #6f1815;
 }
 
 .btn--outline:link,
@@ -227,23 +233,23 @@ body {
 .link:link,
 .link:visited {
   display: inline-block;
-  color: #e67e22;
+  color: #cc2a24;
   text-decoration: none;
-  border-bottom: 1px solid #e67e22;
+  border-bottom: 1px solid #cc2a24;
   padding-bottom: 2px;
   transition: all 0.3s;
 }
 
 .link:hover,
 .link:active {
-  color: #cf711f;
+  color: #6f1815;
   border-bottom: 1px solid transparent; /*color transpartente*/
 }
 
 /*focus indicator para forms y links, donde se da click*/
 *:focus {
   outline: none;
-  /*outline: 4px dotted #e67e22;*/
+  /*outline: 4px dotted #cc2a24;*/
   /*outline-offset: 8px;*/
   box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
 }
@@ -283,7 +289,8 @@ body {
 }
 
 .logo {
-  height: 8.8rem;
+  display: flex;
+  align-items: center ;
 }
 
 /*************************/
@@ -315,42 +322,32 @@ body {
   width: 120%; /* hacer flexible la imagen con el movimiento de la pantalla */
 }
 
+.hero-c2a {
+  display: flex;
+  align-items: center;
+}
+
+.hero-c2a a {
+  display: flex;
+  align-items: center;
+}
+
 .margin-right-small {
   margin-right: 1.6rem !important;
 }
 
-.delivered-meals {
+.hero-footer {
   display: flex;
   align-items: center;
   gap: 1.6rem;
   margin-top: 8rem;
 }
 
-.delivered-img {
-  display: flex;
-}
-
-.delivered-img img {
-  height: 4.8rem;
-  width: 4.8rem;
-  border-radius: 50%;
-  margin-right: -1.6rem; /* imagen sobre otra imagen */
-  border: 3px solid #fdf2e9; /* detalle de borde entre fotos, da un toque */
-}
-
-.delivered-img img:last-child {
-  margin: 0; /* quitar el margen negatiuvo a la ultima foto xq el texto se pego a la foto */
-}
-
-.delivered-text {
+.hero-footer-text {
   font-size: 1.8rem;
   font-weight: 600;
 }
 
-.delivered-text spam {
-  color: #cf711f;
-  font-weight: 700;
-}
 
 /*************************/
 /* NAVIGATION */
@@ -368,7 +365,7 @@ body {
   color: #333;
   font-weight: 500;
   font-size: 1.8rem;
-  margin-right: 450px;
+  text-decoration: none;
 }
 
 .main-nav-link:link,
@@ -383,7 +380,7 @@ body {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #cf711f;
+  color: #6f1815;
 }
 
 .main-nav-link.nav-ca:link, /*debe tener ambas clases, sin espacio*/
@@ -391,12 +388,12 @@ body {
   padding: 1.6rem 2.4rem;
   border-radius: 9px;
   color: white;
-  background-color: #e67e22;
+  background-color: #cc2a24;
 }
 
 .main-nav-link.nav-ca:hover,
 .main-nav-link.nav-ca:active {
-  background-color: #cf711f;
+  background-color: #6f1815;
 }
 
 /*************************/
@@ -489,26 +486,26 @@ body {
 /* MEALS SECTION */
 /*************************/
 
-.section-meals {
+.section-mission {
   padding: 9.6rem;
 }
 
-.meal-content {
+.mission-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
-.meal {
+.mission {
   box-shadow: 0 2.4px 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden; /*redondear bien*/
   transition: all 0.4s; /*efecto de mover arriba mas lento*/
 }
 
-.meal:hover {
+.mission:hover {
   transform: translateY(-1.2rem); /*move up a little bit*/
   box-shadow: 0 0.32px 6.4rem rgba(0, 0, 0, 0.096);
 }
-.meal-tags {
+.mission-tags {
   margin-bottom: 1.2rem;
   display: flex;
   gap: 0.4rem;
@@ -533,78 +530,48 @@ body {
   background-color: #ffa73b;
 }
 
-.meal-title {
+.mission-title {
   font-size: 2.4rem;
   color: #333;
   font-weight: 600;
   margin-bottom: 3.2rem;
 }
 
-.meal-attributes {
+.mission-attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.meal-attribute {
+.mission-attribute {
   font-size: 2.0rem;
   display: flex;
   align-items: center;
   gap: 1.8rem;
 }
 
-.meal-img {
+.mission-img {
   width: 100%;
 }
 
-.meal-img2 {
+.mission-img2 {
   width: 115%;
 }
 
 /*************************/
-/* TESTIMONIALS SECTION */
+/* ABOUT SECTION */
 /*************************/
 
-.section-testimonials {
- 
+.section-about {
+  padding: 9.6rem;
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
 }
 
-.testimonials-container {
+.about-container {
   padding: 9.6rem 0;
-}
-.testimonials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 4.8rem;
-  column-gap: 8rem;
-}
-
-.testimonial-img {
-  width: 6.4rem;
-  border-radius: 50%;
-  margin-bottom: 2rem;
-}
-
-.testimonial-text {
-  font-size: 1.8rem;
-  line-height: 1.8;
-  margin-bottom: 1.6rem;
-}
-
-.testimonial-name {
-  font-size: 1.6rem;
-  color: #6f6f6f;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
-  padding: 1.6rem;
 }
 
 .gallery-item {
@@ -628,10 +595,14 @@ body {
   padding: 9.6rem 0;
 }
 
+.princing-plan-container {
+  display: flex;
+  justify-content: center;
+}
+
 .princing-plan {
   border-radius: 11px;
-
-  width: 75%;
+  width: 55%;
 }
 
 .starter {
@@ -668,16 +639,16 @@ body {
 }
 
 .plan-name {
-  color: #cf711f;
+  color: #6f1815;
   font-weight: 600;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.75;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.2rem;
 }
 
 .plan-price {
-  font-size: 6.2rem;
+  font-size: 6rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 1.6rem;
@@ -707,7 +678,7 @@ body {
 }
 
 .feature-icon {
-  color: #e67e22;
+  color: #cc2a24;
   height: 3.2rem;
   width: 3.2rem;
   background-color: #fdf2e9;
