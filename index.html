@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--hace que el sitio se respondible, es decir que funcione en tablets, ctelefonos, computadoras-->
+    <!--para que la codigo se acople a la pantalla-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- descripcion para que nuestra pagina salga en google al buscar ciertas palabras-->
+    <meta name="description" content="Omnifoof is an AI-powered food subscription that will male you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs." />
+
+    <!--favicon desktop-->
+    <link rel="icon" href="img/favicon.png" />
+    <!--favicon iphone-->
+    <link rel="apple-touch-icon" href="img/apple-favicon.png" />
+    <!--favicon andorid-->
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Fundación Roberto Ruíz Obregón</title>
+  </head>
+  <body>
+    <header class="header nav-open"> <!--nav-opren js-->
+      <!--cuando le demos click, se va al inicio de la pagina-->
+      <a href="#">
+        <img class="logo" alt="Logo de la fundación" src="img/logos/logoFundacion.png" />
+      </a>
+      
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="nombreFundacion">Fundación Roberto Ruíz Obregón</a></li>
+          <li><a class="main-nav-link" href="#nosotros">Quienes somos</a></li>
+          <li><a class="main-nav-link" href="#misionVision">Misión</a></li>
+          <li><a class="main-nav-link" href="#misionVision">Visión</a></li>
+          <li><a class="main-nav-link nav-ca" href="#app">Nuestra app</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Cursos y programas que te soprenderan día a día.
+            </h1>
+            <p class="hero-description">
+              Motivados por la sociedad mexicana, se ha creado una aplicación Android, donde
+              podrás encontrar cursos, programas, eventos, becas y más...
+            </p>
+            <!--href = #cta porqque tenemos un id con ese nombre enn section-cta-->
+            <a href="#descargar" class="btn btn--full margin-right-small">
+              Descargala ahora
+            </a>
+            <a href="#app" class="btn btn--outline"> Conocela &darr;</a>
+
+            <div class="delivered-meals">
+              <div class="delivered-faces"></div>
+              <div class="delivered-img">
+                <img src="img/customers/customer-1.jpg" alt="coustemer photo" />
+                <img src="img/customers/customer-2.jpg" alt="coustemer photo" />
+                <img src="img/customers/customer-3.jpg" alt="coustemer photo" />
+                <img src="img/customers/customer-4.jpg" alt="coustemer photo" />
+                <img src="img/customers/customer-5.jpg" alt="coustemer photo" />
+                <img src="img/customers/customer-6.jpg" alt="coustemer photo" />
+              </div>
+              <p class="delivered-text">
+                <spam>Unete </spam>a nuestra comunidad
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="img/gallery/gallery-1.jpg"
+              class="hero-img"
+              alt="Mujer usando un telefono android"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-testimonials grid grid-2-cols" id="nosotros">
+
+        <div class="testimonials-container">
+          <span class="subheading">Quienes somos</span>
+          <h2 class="heading-secondary">
+           ¿Quién es Roberto Ruíz Obregón?
+          </h2>
+        <div class="testimonials">
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/dave.jpg" />
+            <blockquote class="testimonial-text"> Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</blockquote>
+            <p class="testimonial-name"> &mdash; Dave Bryson</p>
+          </figure>
+
+
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/steve.jpg" />
+            <blockquote class="testimonial-text"> Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now!</blockquote>
+            <p class="testimonial-name"> &mdash;  Steve Miller</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/ben.jpg" />
+            <blockquote class="testimonial-text"> The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore! </blockquote>
+            <p class="testimonial-name"> &mdash; Ben Hadley</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/hannah.jpg" />
+            <blockquote class="testimonial-text"> I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic.</blockquote>
+            <p class="testimonial-name"> &mdash;  Hannah Smith</p>
+          </figure>
+        </div>
+      </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-13.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-2.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-3.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-4.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-5.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-6.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-7.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-8.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-9.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-10.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-11.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-12.jpg" alt="Photo of beautifully arranged food" />
+            
+          </figure>
+        </div>
+      </section>
+      <section class="section-meals" id="misionVision">
+        <div class="container center-text">
+          <span class="subheading">Misión y Visión</span>
+          <h2 class="heading-secondary">
+            Insipirados por el pueblo mexicano y la educación
+          </h2>
+        </div>
+
+        <div class="container grid grid-2-cols margin-bottom-md">
+          <div class="meal">
+            <img
+              src="img/meals/mision.jpg"
+              class="meal-img"
+              alt="Japanesse Gyozas"
+            />
+            <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">Misión</span>
+            </div>
+            <p class="meal-title">Nuestra razón de ser</p>
+            
+            <p class="meal-attribute">
+              Promover y organizar programas relacionados con la educación,
+               responsabilidad social empresarial, la profesionalización del 
+               tercer sector, el bienestar social, la sustentabilidad y la cultura, 
+               a favor del desarollo de la comunidad queretana.
+            </p>
+          </div>
+          </div>
+
+          <div class="meal">
+            <img
+              src="img/meals/vision.jpg"
+              class="meal-img2"
+              alt="Avocado Salad"
+            />
+            <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--paleo">Visión</span>
+            </div>
+            <p class="meal-title">Nuestras metas</p>
+            
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon"name="flame-outline"></ion-icon ><span></span>Calories:
+                <strong>400</strong></span>
+              </li>
+              <li class="meal-attribute"><ion-icon class="meal-icon" name="restaurant-outline"></ion-icon><span>NutriScore &reg; <trong>92</trong></span></li>
+              <li class="meal-attribute"><ion-icon class="meal-icon"name="star-outline"></ion-icon><span><strong>4.9</strong> rating (537)</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-how" id="app">
+        <div class="container">
+          <span class="subheading">¿Cómo funciona nuestra aplicación?</span>
+          <h2 class="heading-secondary">
+            Aprende algo nuevo en 4 sencillos pasos
+          </h2>
+        </div>
+        <!--STEP 01-->
+        <div class="container grid grid-2-cols grid-center-v">
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-terciary">
+              Busca el curso que llame tu atención
+            </h3>
+            <p class="step-description">
+              En la sección de cursos podrás encontrar cursos
+              con diferentes temas de interés que pueden ser
+              atractivos para ti, usa nuestros filtros para 
+              encontrarlo más fácil.
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-1.png"
+              class="step-img"
+              alt="iPhone app preferences selection screen"
+            />
+          </div>
+          <!--STEP 02-->
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-2.png"
+              class="step-img"
+              alt="Meañl approving plan"
+            />
+          </div>
+
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-terciary">Revisa la información del curso</h3>
+            <p class="step-description">
+              Al encontrar el curso ideal para ti, puedes obtener más información
+              importante (costo, modalidad, profesor y código postal) al dar click
+              en el botón "ver más".
+            </p>
+          </div>
+          <!--STEP 03-->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-terciary">Inscribete</h3>
+            <p class="step-description">
+              Para poder obtener el link al zoom o bien, la dirección del lugar
+              donde se impartirá el curso, es necesario que te inscribas a él, si
+              el curso es gratuito no necesitarás pagar nada, en cambio, si es de paga
+              te daremos una ficha de pago para que puedas realizar el pago y compartirl
+              el comprobante de pago ahí mismo en la aplicación (botón de "Inscribirme") 
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-3.png"
+              class="step-img"
+              alt="iPhone app DELIVERING SCREEN"
+            />
+          </div>
+          <!--STEP 04-->
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-2.png"
+              class="step-img"
+              alt="Meañl approving plan"
+            />
+          </div>
+
+          <div class="step-text-box">
+            <p class="step-number">04</p>
+            <h3 class="heading-terciary">Asiste o conectate al curso</h3>
+            <p class="step-description">
+              Asiste a la locación o conectate a la sesión de zoom el día
+              y ahora que aparecen en la información del curso. ¡Disfruta aprender algo nuevo!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pricing" id="descargar">
+        <div class="container">
+          <span class="subheading">Descargala ahora</span>
+          <h2 class="heading-secondary">
+            ¡Aprende, disfruta y comparte!
+          </h2>
+        </div>
+
+        <div class="container grid grid-1-cols margin-bottom-md">
+          <div class="princing-plan starter">
+            <header class="plan-header">
+              <p class="plan-name">Obtenla por</p>
+              <p class="plan-price"><span>$</span>0</p>
+              <p class="plan-text">tu experiencia no tiene costo</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Cursos gratuitos</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Cursos de pago</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Programas</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Eventos</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Becas</span>
+              </li>
+              
+            </ul>
+            <div class="plan-sing-up">
+              <a href="#" class="btn btn--full">Descargar ahora</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container grid">
+          <aside class="plan-details">
+            Al obtenerla podras...
+          </aside>
+        </div>
+
+        <div class="container grid grid-4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+            <p class="feature-title">Cursos ilimitados</p>
+            <p class="feature-text">
+              Inscribirte a cursos tanto presenciales como remotos, con diferentes
+              temas de interés y estartegias de aprendizaje.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+            <p class="feature-title">Programas</p>
+            <p class="feature-text">
+              Podras conocer los programas que tenemos para ti, tanto de bienestar, 
+              emprendimiento, entre otros.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+            <p class="feature-title">Eventos</p>
+            <p class="feature-text">
+              Conocer eventos que realizaremos cerca de ti, estos pueden ser tanto academicos
+              como de vida diaria.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+            <p class="feature-title">Becas</p>
+            <p class="feature-text">
+              Conocer las becas que tenemos para ti y los apoyos que te podemos brindar.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container  grid grid-footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="Omnifood logo" src=img/logos/logoFundacion.png />
+          </a>
+
+          <ul class="social-links">
+            <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
+            <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
+            <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
+          </ul>
+
+          <p class="copyright">Copyrigt &copy; <span class="year">2017</span> by Omifood Inc. All rights reserved</p>
+          
+        </div>
+        <div class="adress-col">
+          <p class="footer-heading">Contact Us</p>
+          <adress class="contacts">
+            <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+            <p><a class="footer-link" href="tel:415-201-6370">415-201-6370</a></p>
+            <p><a class="footer-link" href="mailto:hello@omnifood.com">hello@omnifood.com</a></p>
+          </adress>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
