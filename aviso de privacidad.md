@@ -57,5 +57,8 @@ Nos comprometemos a no transferir su información personal a terceros sin su con
 
 Las cookies son archivos de texto que son descargados automáticamente y almacenados en el disco duro del equipo de cómputo del usuario al navegar en una página de Internet específica, que permiten recordar al servidor de Internet algunos datos sobre este usuario, entre ellos, sus preferencias para la visualización de las páginas en ese servidor, nombre y contraseña.
 
+## Borrar tus datos de la app
 
-La fecha de la última actualización al presente aviso de privacidad: 26 / Abril / 2023
+Para borrar tus datos de la aplicación, ingresa a tu perfil, editar perfil y ahí selecciona el botón para borrar perfil
+
+La fecha de la última actualización al presente aviso de privacidad: 27 / Abril / 2023
