@@ -574,6 +574,13 @@ a {
   padding: 9.6rem 0;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
 .gallery-item {
   overflow: hidden;
 }
