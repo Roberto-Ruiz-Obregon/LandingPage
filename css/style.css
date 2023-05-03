@@ -479,8 +479,14 @@ a {
 }
 
 .step-img {
-  width: 55%;
+  width: 40%;
 }
+
+.step-img1 {
+  width: 65%;
+  margin-left: 40px;
+}
+
 
 /*************************/
 /* MEALS SECTION */
